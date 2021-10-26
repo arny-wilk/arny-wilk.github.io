@@ -1,3 +1,3 @@
 # arny-wilk.github.io
 
-# presentation page of me
+# presentation page in HTML CSS and Javascript
