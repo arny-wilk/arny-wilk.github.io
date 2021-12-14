@@ -8,59 +8,528 @@
     <!-- CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
     <!-- Animate CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <title>My site !</title>
+    <!-- Title -->
+
+    <title>My portfolio !</title>
+
 </head>
 
 <body>
     <!-- Navbar -->
     <nav>
         <h1>ARNOLD WILK</h1>
+        <label id="check" for="check" class="checkbtn">
+          <svg className="w-6 h-6"
+          width="2.5rem"
+          height="2.5rem" 
+          fill="currentColor" 
+          viewBox="0 0 20 20" 
+          xmlns="http://www.w3.org/2000/svg">
+          <path fillRule="evenodd" d="M3 5a1 
+          1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 
+          10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3
+           15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" 
+           clipRule="evenodd" />
+          </svg>
+        </label>
         <ul class="navigation">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><button onclick="darkmode()">Darkmode</button></li>
         </ul>
         <button class="burger-menu" id="burger-menu">
           <ion-icon class="bars" name="menu-outline"></ion-icon>
         </button>
     </nav>
-  
 
     <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img 
+        src="assets/images/Photo_CV.jpg"
+        alt="keyboard"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About me</h2>
+        <p class="bio-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+          inventore tempore minus nemo, iste ullam illo laboriosam maiores
+          repudiandae quos!
+        </p>
+    </section> 
 
     <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+        autem deleniti cupiditate molestias quis unde quae totam porro dicta
+        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+        nostrum dolor minus, libero delectus praesentium perferendis
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+        consequuntur labore? Ea totam voluptas amet!
+      </p>
+    </section>
+
 
     <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header"> My top skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <ul class="keyboard">
+            <li>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span><img 
+                src="assets/images/CSS3_and_HTML5_logos_and_wordmarks.svg"
+                alt="logo html and css"
+                loading="lazy"
+                class="icon icon-card"
+              /></span>
+            </li>
+            <li>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span><img 
+                src="assets/images/javascript.svg"
+                alt="logo javascript"
+                loading="lazy"
+                class="icon icon-card"
+              /></span>
+            </li>
+            <li>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span><img 
+                src="assets/images/react.svg"
+                alt="logo react"
+                loading="lazy"
+                class="icon icon-card"
+              /></span>
+            </li>
+            <li>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span><img 
+                src="assets/images/Svelte_Log.svg"
+                alt="logo Svelte"
+                loading="lazy"
+                class="icon icon-card"
+              /></span>
+            </li>
+          </ul>
+        </div>
+        <div class="second-set animate__animated animate__pulse">
+          <ul class="keyboard">
+            <li>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span><img 
+                src="assets/images/python.svg"
+                alt="logo python"
+                loading="lazy"
+                class="icon icon-card"
+              /></span>
+            </li>
+            <li>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span><img 
+                src="assets/images/django.svg"
+                alt="logo django"
+                loading="lazy"
+                class="icon icon-card"
+              /></span>
+            </li>
+            <li>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span><img 
+                src="assets/images/logo_fastapi.svg"
+                alt="logo fastapi"
+                loading="lazy"
+                class="icon icon-card"
+              /></span>
+            </li>
+            <li>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span><img 
+                src="assets/images/logo_streamlit.svg"
+                alt="logo streamlit"
+                loading="lazy"
+                class="icon icon-card"
+              /></span>
+            </li>
+          </ul>
+          <div class="third-set animate__animated animate__pulse">
+            <ul class="keyboard">
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/mysql.svg"
+                  alt="logo mysql"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/postgresql.svg"
+                  alt="logo postgresql"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/mongodb.svg"
+                  alt="logo mongodb"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+            </ul>
+          </div>
+          <div class="fourth-set animate__animated animate__pulse">
+            <ul class="keyboard">
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/logo_Apache2.svg"
+                  alt="logo Apache2"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/nginx.svg"
+                  alt="logo nginx"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/logo_letsencrypt.svg"
+                  alt="logo let's encrypt"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/uvicorn.svg"
+                  alt="logo uvicorn"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+            </ul>
+          </div>
+          <div class="fifth-set animate__animated animate__pulse">
+            <ul class="keyboard">
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/docker.svg"
+                  alt="logo docker"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/git-icon.svg"
+                  alt="logo git"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+            </ul>
+          </div>
+          <div class="sixth-set animate__animated animate__pulse">
+            <ul class="keyboard">
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/digitalocean.svg"
+                  alt="logo digitalocean"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/heroku.svg"
+                  alt="logo heroku"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/ipfs.svg"
+                  alt="logo ipfs distribution"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+              <li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span><img 
+                  src="assets/images/ethereum-name-service.svg"
+                  alt="logo ethereum-name-service"
+                  loading="lazy"
+                  class="icon icon-card"
+                /></span>
+              </li>
+            </ul>
+          </div>
+          <div class="last-set animate__animated animate__pulse">
+            <ul class="keyboard">
+              <li>
+                <span id="control">ctrl</span>
+              </li>
+              <li>
+                <span id="space">space</span>
+              </li>
+              <li>
+                <span id="shift">shift</span>
+              </li>
+              <li>
+                <span id="enter">enter</span>
+              </li>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/"
+            alt="Expense Tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Expense tracker</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/"
+            alt="Chat app"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Chat app</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/"
+            alt="PWA"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Progressive web app</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact section -->
 
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- Social accounts - Fixed to the right -->
+
+    <div class="social-set animate__animated animate__pulse">
+      <div class="socials">
+        <a href="#" target="_blank"
+        ><img
+          src="assets/icons/github.svg"
+          alt="Github"
+          width="150" height="150"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/Linkedin.svg"
+          alt="Linkedin"
+          width="150" height="150"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/Instagram.svg"
+          alt="Instagram"
+          width="150" height="150"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img src="assets/icons/Twitter_Bird.svg" 
+        alt="Twitter"
+        width="150" height="150"
+        loading="lazy"
+        class="socicon"
+      /></a>
+      </div>
+    </div>
 
     <!-- Scroll to top -->
 
+    <i class="scroll-up" id="scroll-up"
+    ><svg className="w-6 h-6" width="3.5rem" height="3.5rem" fill="#07b9b9" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path fillRule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 
+      1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 
+      01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+      </svg>
+    </i>
+
+
     <!-- Footer section -->
+
+    <footer>
+      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="" target="_blank"
+          >Arnold Wilk</a
+        >
+      </p>
+    </footer>
+
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
@@ -74,5 +543,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
 </body>
 </html>
