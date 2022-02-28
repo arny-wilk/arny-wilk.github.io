@@ -44,3 +44,5 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
+
+// Select onClick top skills

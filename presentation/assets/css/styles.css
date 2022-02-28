@@ -124,7 +124,7 @@ nav ul li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: justify;
     gap: 2.5rem;
     max-width: 68.75rem;
     margin: 10%;
@@ -304,6 +304,10 @@ nav ul li {
 
 
   /* contact section */
+
+  .barre {
+    text-decoration: line-through;
+  }
 
   .contact {
     margin-top: 2rem;
