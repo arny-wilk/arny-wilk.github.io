@@ -26,7 +26,7 @@ html {
 /* Dark mode */
 
 .dark-mode {
-  background-color: black;
+  background-color: rgb(42, 46, 53) ;
   color: white;
 }
 
@@ -60,49 +60,75 @@ body {
 /* Navigation Bar */
 
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  background: var(--bg-color);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  
+  @media screen and (max-width: 960px) {
+      transition: 0.8s all escape;
+  }
 }
 
 nav h1 {
     color: var(--primary-color);
+    display: flex;
+    z-index: 1;
+    padding: 0 24px;
 }
 
 nav a {
     color: var(--primary-color);
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
 }
 
 nav a:hover {
     color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 nav ul {
-    display: flex;
-    gap: 3.9rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  /*margin-right: -22px;*/
+
+  @media screen and (max-width: 768px){
+      display: none;
+  }
 }
 
 nav ul li {
     font-weight: var(--bold-font);
+    height: 80px;
 }
 
 .burger-menu {
+    display: none;
+    align-items: center;
+    text-decoration: none;
     color: var(--primary-color);
+    height: 100%;
     font-size: 2rem;
+    padding: 0 1rem;
     border: 0;
     background-color: transparent;
     cursor: pointer;
-    display: none;
 }
+
+
 
 .checkbtn {
   font-size: 30px;
@@ -135,6 +161,14 @@ nav ul li {
     width: 625px;
     padding: 0.625rem;
     border-radius: 85% 15% 70% 30% / 29% 26% 74% 71% ;
+
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+  }
+  
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }
 }
 
 /* About section */
