@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title -->
 
@@ -17,111 +17,151 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Navbar -->
     <nav>
-        <h1>ARNOLD WILK</h1>
-        <label id="check" for="check" class="checkbtn">
-          <svg className="w-6 h-6"
+      <h1>ARNOLD WILK</h1>
+      <label id="check" for="check" class="checkbtn">
+        <svg
+          className="w-6 h-6"
           width="2.5rem"
-          height="2.5rem" 
-          fill="currentColor" 
-          viewBox="0 0 20 20" 
-          xmlns="http://www.w3.org/2000/svg">
-          <path fillRule="evenodd" d="M3 5a1 
+          height="2.5rem"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            d="M3 5a1 
           1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 
           10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3
-           15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" 
-           clipRule="evenodd" />
-          </svg>
-        </label>
-        <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-          <li><button onclick="darkmode()">Darkmode</button></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
+           15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </label>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="https://www.linkedin.com/in/arnold-wilk/" class="nav-link">Contact</a></li>
+        <li><button onclick="darkmode()" class="nav-link">Darkmode</button></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="about">
-      <img 
-        src="assets/images/Photo_CV.jpg"
-        alt="keyboard"
-        class="hero-img"
-      />
+      <img src="assets/images/photo_cv.jpg" alt="keyboard" class="hero-img" />
       <div class="bio animate__animated animate__shakeX">
         <h2 class="bio-title">About me</h2>
         <p class="bio-text">
-          Hi, I am Arnold Wilk and i am a fullstack developer. 
-          I am 34 years old and i am living in south of France.(Montpellier).
-          I have 2 years of experience in coding and programming.
-          I improve my backend skills with Python, 
-          Linux Bash Scripting and SQL database queries. 
-          I am very versatile in the choice of
-          technologies to develop websites or web apps.
+          Hi, I am Arnold Wilk and i am a fullstack developer. I am 34 years old
+          and i am living in south of France.(Montpellier). I have 2 years of
+          experience in coding and programming. I improve my backend skills with
+          Python, Linux Bash Scripting and SQL database queries. I am very
+          versatile in the choice of technologies to develop websites or web
+          apps.
         </p>
       </div>
-    </section> 
+    </section>
 
     <!-- More about -->
     <section class="more-about">
       <h2>More About Me</h2>
       <p>
-        As a fullstack developer I share here with you my projects in web Development. 
-        I worked before as a marketing and communication
-        manager in the past and now I am specializing in web development and especially in the
-        Full stack development.
-        I am proficient in Front-end with HTML, CSS and Javascript and I am improving in backend
-        with database management and creating API's with Python essentially.
-        I use tools as git cli to push my projects in my repository on my github account as this
-        portfolio and i am looking forward to work with tech industries as a full-stack developer
-        or any other position related to (Web developer, DevOps or Software Engineer).
+        As a fullstack developer I share here with you my projects in web
+        Development. I worked before as a marketing and communication manager in
+        the past and now I am specializing in web development and especially in
+        the Full stack development. I am proficient in Front-end with HTML, CSS
+        and Javascript and I am improving in backend with database management
+        and creating API's with Python essentially. I use tools as git cli to
+        push my projects in my repository on my github account as this portfolio
+        and i am looking forward to work with tech industries as a full-stack
+        developer or any other position related to (Web developer, DevOps or
+        Software Engineer).
       </p>
       <p>
-        You will find in this portfolio all my skills and my progression so far in
-        web applications, Problem solving challenges, and my progress in different field and
-        different programming languages.
+        You will find in this portfolio all my skills and my progression so far
+        in web applications, Problem solving challenges, and my progress in
+        different field and different programming languages.
       </p>
       <p>
-        This simple website is here to show you my work and my dedication to improve myself
-        in Web development and computer science in general. Hope you like it
+        This simple website is here to show you my work and my dedication to
+        improve myself in Web development and computer science in general. Hope
+        you like it
       </p>
     </section>
 
-
     <!-- Skills section -->
     <section class="skills" id="skills">
-      <h2 class="skill-header"> My top skills</h2>
-      <img class="fit-picture" width="240" height="240"
-      src="./assets/images/html-logo.png"
-      alt="html">
-      <img class="fit-picture"
-      src="./assets/images/CSS3_logo.svg.png"
-      alt="css">
-      <img class="fit-picture" width="240" height="240"
-      src="./assets/images/logo_python.svg.png"
-      alt="css">
-      <img class="fit-picture"
-      src="./assets/images/logo_git.png"
-      alt="git">
-      
+      <h2 class="skill-header">My top skills</h2>
+      <img
+        class="fit-picture"
+        width="150"
+        height="150"
+        src="./assets/images/html-logo.png"
+        alt="html"
+      />
+      <img
+        class="fit-picture"
+        width="150"
+        height="150"
+        src="./assets/images/CSS3_logo.svg.png"
+        alt="css"
+      />
+      <img
+        class="fit-picture"
+        width="150"
+        height="150"
+        src="./assets/images/logo_python.svg.png"
+        alt="css"
+      />
+      <img
+        class="fit-picture"
+        width="150"
+        height="150"
+        src="./assets/images/logo_git.png"
+        alt="git"
+      />
+      <img
+        class="fit-picture"
+        width="150"
+        height="150"
+        src="./assets/images/Docker-Symbole.jpg"
+        alt="docker"
+      />
+      <img
+        class="fit-picture"
+        width="150"
+        height="150"
+        src="./assets/images/bash.png"
+        alt="bash"
+      />
+      <img
+        class="fit-picture"
+        width="250"
+        height="250"
+        src="./assets/images/java.jpg"
+        alt="bash"
+      />
     </section>
 
     <!-- Roadmap -->
     <section class="skills" id="skills">
-      <h2 class="skill-header"> My Roadmap in web development and so on</h2>
-      
-      <button><a width='1200' height='800' 
-        href='https://embed.coggle.it/diagram/YfETxo8CBlQBM-PP/7ce397c299d3dd8a387f1942cdf515e1cbb5c9d986619cf0f5b46826302f23bb' 
-        target="_blank" class="project-link" >Have a look on my coggle map</a></button>
+      <h2 class="skill-header">My Roadmap in web development and so on</h2>
+        <iframe
+          width="853"
+          height="480"
+          src="https://embed.coggle.it/diagram/YfETxo8CBlQBM-PP/7ce397c299d3dd8a387f1942cdf515e1cbb5c9d986619cf0f5b46826302f23bb"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
 
     <!-- Projects section -->
@@ -130,108 +170,61 @@
       <div class="projects-container">
         <div class="project-container project-card">
           <img
-            src="assets/images/codewars-banner.png" 
-            width="77.25"
-            height="18"
+            src="assets/images/codewars-banner.png"
             alt="Code Wars"
             loading="lazy"
             class="project-pic"
           />
           <h3 class="project-title">Problem solving</h3>
           <p class="project-details">
-            A bunch of kata i did on codewars to improve my problem solving skills
-            in Python. Soon I will try the same approach to improve my javascript or
-            different programming languages according to the needs of the market
+            A bunch of kata i did on codewars to improve my problem solving
+            skills in Python. Soon I will try the same approach to improve my
+            javascript or different programming languages according to the needs
+            of the market
           </p>
-          <a href="https://github.com/arny-wilk/codewars" target="_blank" class="project-link">Check it Out</a>
+          <a
+            href="https://github.com/arny-wilk/codewars"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
         </div>
         <div class="project-container project-card">
           <img
             src="assets/images/flaskds-2.jpg"
-            width="77.25"
-            height="18"
             alt="dsa"
             loading="lazy"
             class="project-pic"
           />
           <h3 class="project-title">DSA by building flask API</h3>
           <p class="project-details">
-            Here you will find the project i made to tackle data structure and algorithms with Python.
-            This project from the Freecodecamp lecture was beneficial because it helps me to understand 
-            how to create API's, how to use DSA to improve efficiently the performance of a simple 
-            blog website and testing them with Thunder-Client or Postman.
+            Here you will find the project i made to tackle data structure and
+            algorithms with Python. This project from the Freecodecamp lecture
+            was beneficial because it helps me to understand how to create
+            API's, how to use DSA to improve efficiently the performance of a
+            simple blog website and testing them with Thunder-Client or Postman.
           </p>
-          <a href="https://github.com/arny-wilk/dsa-flask-api" target="_blank" class="project-link">Check it Out</a>
+          <a
+            href="https://github.com/arny-wilk/dsa-flask-api"
+            target="_blank"
+            class="project-link"
+            >Check it Out</a
+          >
         </div>
         <div class="project-container project-card">
           <img
-            src="assets/images/22520152-a-yellow-and-black-sign-with-the-words-under-construction-isolated-on-a-white-background-under-const.jpg"
-            width="77.25"
-            height="18"
+            src="assets/images/ecommerce_image.png"
             alt="Forum project"
             loading="lazy"
             class="project-pic"
           />
           <h3 class="project-title">Learning by doing projects</h3>
           <p class="project-details">
-            I am actually working on a fullstack project. This is a forum for techies made with my favourite technologies. 
-            I will share sooner or later the minimum viable product done so far in this section. 
-            Stay tune.
+          E-commerce application made with Django and React. Applying JWT authentication for user registration and login
           </p>
-          <a href="#" target="_blank" class="project-link">Under construction</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact section -->
-
-    <section class="contact" id="contact">
-      <h2><span class="barre">Get In Touch With Me</span></h2>
-      <h2>This section is under construction.</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
+          <a href="https://github.com/arny-wilk/ecommerce_website" target="_blank" class="project-link"
+            >Under construction</a
+          >
         </div>
       </div>
     </section>
@@ -240,50 +233,56 @@
 
     <div class="social-set animate__animated animate__pulse">
       <div class="socials">
+        <a href="https://github.com/arny-wilk" target="_blank"
+          ><img
+            src="assets/icons/github.svg"
+            alt="Github"
+            width="150"
+            height="150"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.linkedin.com/in/arnold-wilk/" target="_blank"
+          ><img
+            src="assets/icons/Linkedin.svg"
+            alt="Linkedin"
+            width="150"
+            height="150"
+            loading="lazy"
+            class="socicon"
+        /></a>
         <a href="#" target="_blank"
-        ><img
-          src="assets/icons/github.svg"
-          alt="Github"
-          width="150" height="150"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/Linkedin.svg"
-          alt="Linkedin"
-          width="150" height="150"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/Instagram.svg"
-          alt="Instagram"
-          width="150" height="150"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/Twitter_Bird.svg" 
-        alt="Twitter"
-        width="150" height="150"
-        loading="lazy"
-        class="socicon"
-      /></a>
+          ><img
+            src="assets/icons/Instagram.svg"
+            alt="Instagram"
+            width="150"
+            height="150"
+            loading="lazy"
+            class="socicon"
+        />You can check the_little_tech_guy on instagram to see my progress in Java</a>
       </div>
     </div>
 
     <!-- Scroll to top -->
 
     <i class="scroll-up" id="scroll-up"
-    ><svg className="w-6 h-6" width="3.5rem" height="3.5rem" fill="#07b9b9" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-      <path fillRule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 
+      ><svg
+        className="w-6 h-6"
+        width="3.5rem"
+        height="3.5rem"
+        fill="#07b9b9"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fillRule="evenodd"
+          d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 
       1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 
-      01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+      01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z"
+          clipRule="evenodd"
+        />
       </svg>
     </i>
-
 
     <!-- Footer section -->
 
@@ -291,12 +290,9 @@
       <p class="copy">&copy; Copyright 2021</p>
       <p class="copy">
         Built with &#x2661; by
-        <a href="" target="_blank"
-          >Arnold Wilk</a
-        >
+        <a href="" target="_blank">Arnold Wilk</a>
       </p>
     </footer>
-
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
@@ -310,6 +306,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
-</body>
+  </body>
 </html>
